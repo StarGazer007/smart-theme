@@ -1,0 +1,44 @@
+/*
+Theme Name: Taoist
+Version: 1.1.1
+Theme URI: http://www.wdthemes.com/wordpress-themes/taoist
+Author: taosit
+Author URI: http://www.wdthemes.com
+Description: Taoist is a simple, mobile-friendly, responsive theme that can be used as a simple WordPress theme or as a starting point for designers to make further customizations. Taoist is fully child-themeable and includes several useful theme options to extend typography, colors, background and header styles.
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, light, one-column, two-columns, responsive-layout, left-sidebar, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready, black, blue, custom-background, custom-colors, featured-images, theme-options, threaded-comments
+Text Domain: tao
+*/
+
+
+
+
+
+
+/* Mobile first queries */
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+	
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	
+/* Larger than tablet */
+@media (min-width: 750px) {
+	
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+	
+}
