@@ -2,8 +2,8 @@
 /**
  * The Header for our theme.
  *
- * @package Taoist Theme
- * @subpackage taoist
+ * @package Smart Theme
+ * @subpackage smarttheme
  * @author WDThemes - www.wdthemes.com
  */
 ?>
