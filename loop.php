@@ -29,7 +29,7 @@
 
 	<!-- article -->
 	<article>
-		<h2><?php _e( 'Sorry, nothing to display.', 'taoist' ); ?></h2>
+		<h2><?php _e( 'Sorry, nothing to display.', 'smart-theme' ); ?></h2>
 	</article>
 	<!-- /article -->
 
