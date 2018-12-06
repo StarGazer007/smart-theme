@@ -42,7 +42,7 @@ if( ! function_exists( 'st_enqueue_styles' ) ) {
     $minified = st_get_opt( 'minified_css' ) ? '.min' : '';
     $is_rtl = is_rtl() ? '-rtl' : '';
     $style_url = ST_THEME_DIR . '/style' . $minified . '.css';
-    
+
     // Custom CSS generated from the dashboard
 
     $file = get_option('st-generated-css-file');
@@ -53,3 +53,4 @@ if( ! function_exists( 'st_enqueue_styles' ) ) {
 
 
 }
+?>
