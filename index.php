@@ -4,7 +4,7 @@
 		<!-- section -->
 		<section>
 
-			<h1><?php _e( 'Main Page', 'taoist' ); ?></h1>
+			
 
 			<?php get_template_part('loop'); ?>
 
