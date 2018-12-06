@@ -1,2 +1,2 @@
-# travel-theme
-WordPress theme for travel sites
+# Smart-Theme
+WordPress theme that learns and adapts to your usesage
