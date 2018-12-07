@@ -32,25 +32,32 @@
    * Enqueue styles
    * ---------------------------------------------------------------------------
  */
+ function st_enqueue_stylesheets() {
+     // Load main stylesheet
+     wp_enqueue_style( 'SmartStyle', get_stylesheet_uri() );
+     // Load other stylesheets
+    // wp_enqueue_style( 'FrameWork',  ST_STYLES . '/foundation.min.css' );
+     wp_enqueue_style( 'FrameWork', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' );
 
-if( ! function_exists( 'st_enqueue_styles' ) ) {
-  add_action( 'wp_enqueue_scripts', 'st_enqueue_styles', 10000 );
+ }
 
-
-  function st_enqueue_styles() {
-    $version = st_get_theme_info( 'Version' );
-    $minified = st_get_opt( 'minified_css' ) ? '.min' : '';
-    $is_rtl = is_rtl() ? '-rtl' : '';
-    $style_url = ST_THEME_DIR . '/style' . $minified . '.css';
-
-    // Custom CSS generated from the dashboard
-
-    $file = get_option('st-generated-css-file');
-    if( ! empty( $file ) && ! empty( $file['url'] ) ) {
-      $style_url = $file['url'];
-    }
+add_action( 'wp_enqueue_scripts', 'st_enqueue_stylesheets' );
 
 
+/**
+ * ---------------------------------------------------------------------------
+ * Register custom navigation menus
+ * ---------------------------------------------------------------------------
+*/
+
+function create_smarttheme_me() {
+
+	$locations = array(
+		'main_menu' => __( 'Main navigation', 'smarttheme' ),
+		'top_menu' => __( 'Top menu', 'smarttheme' ),
+		'footer_menu' => __( 'Footer Menu', 'smarttheme' ),
+	);
+	register_nav_menus( $locations );
 
 }
-?>
+add_action( 'init', 'create_smarttheme_me' );

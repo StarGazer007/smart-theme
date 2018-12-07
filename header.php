@@ -19,7 +19,7 @@
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
 <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+<title><?php wp_title('&raquo;','true','right'); ?><?php bloginfo('name'); ?></title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
@@ -33,7 +33,7 @@
 <!-- Mobile Specific Metas
 ================================================== -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
 <?php wp_head(); ?>
@@ -43,5 +43,21 @@
 
 <?php
 	//do_action('skeleton_header');
-	//do_action('skeleton_navbar');
 ?>
+
+
+<a class="navbar-brand mr-auto mr-lg-0" href="#">Offcanvas navbar</a>
+<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+       <span class="navbar-toggler-icon"></span>
+  </button>
+
+   <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+  <?php
+	//do_action('skeleton_navbar');
+  wp_nav_menu( array(
+    'theme_location' => 'main_menu',
+    'container_class' => 'navbar navbar-expand-lg fixed-top navbar-dark bg-dark' )
+  );
+
+   ?>
+</div>
